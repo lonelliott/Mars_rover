@@ -1,0 +1,41 @@
+<%= form_for(@rover) do |f| %>
+  <% if @rover.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rover.errors.count, "error") %> prohibited this rover from being saved:</h2>
+
+      <ul>
+      <% @rover.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :r1_start %><br>
+    <%= f.number_field :r1_start %>
+  </div>
+  <div class="field">
+    <%= f.label :r1_start_direction %><br>
+    <%= f.text_field :r1_start_direction %>
+  </div>
+  <div class="field">
+    <%= f.label :r1_commands %><br>
+    <%= f.text_field :r1_commands %>
+  </div>
+  <div class="field">
+    <%= f.label :r2_start %><br>
+    <%= f.number_field :r2_start %>
+  </div>
+  <div class="field">
+    <%= f.label :r2_start_direction %><br>
+    <%= f.text_field :r2_start_direction %>
+  </div>
+  <div class="field">
+    <%= f.label :r2_commands %><br>
+    <%= f.text_field :r2_commands %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

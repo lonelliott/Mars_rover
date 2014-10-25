@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  r1_start: 1
+  r1_start_direction: MyString
+  r1_commands: MyString
+  r2_start: 1
+  r2_start_direction: MyString
+  r2_commands: MyString
+
+two:
+  r1_start: 1
+  r1_start_direction: MyString
+  r1_commands: MyString
+  r2_start: 1
+  r2_start_direction: MyString
+  r2_commands: MyString

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>R1 start:</strong>
+  <%= @rover.r1_start %>
+</p>
+
+<p>
+  <strong>R1 start direction:</strong>
+  <%= @rover.r1_start_direction %>
+</p>
+
+<p>
+  <strong>R1 commands:</strong>
+  <%= @rover.r1_commands %>
+</p>
+
+<p>
+  <strong>R2 start:</strong>
+  <%= @rover.r2_start %>
+</p>
+
+<p>
+  <strong>R2 start direction:</strong>
+  <%= @rover.r2_start_direction %>
+</p>
+
+<p>
+  <strong>R2 commands:</strong>
+  <%= @rover.r2_commands %>
+</p>
+
+<%= link_to 'Edit', edit_rover_path(@rover) %> |
+<%= link_to 'Back', rovers_path %>

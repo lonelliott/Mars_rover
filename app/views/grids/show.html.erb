@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @grid.length %>
+</p>
+
+<p>
+  <strong>Width:</strong>
+  <%= @grid.width %>
+</p>
+
+<%= link_to 'Edit', edit_grid_path(@grid) %> |
+<%= link_to 'Back', grids_path %>
